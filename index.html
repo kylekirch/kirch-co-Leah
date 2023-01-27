@@ -6,22 +6,60 @@
         .center-content{
             text-align: center;
         }
+        #navigation {
+        color: white;
+        font-family: Sans-Serif;
+        border: 2px solid black;
+        background-origin: padding-box;
+        background-color: rgb(129, 118, 204);
+        height: auto;
+        list-style: none;
+        margin: 0;
+        padding: 0px;
+        position: relative;
+      }
+        #navigation li a {
+        color: whitesmoke;
+        display: block;
+        border: 1px solid black;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 10px;
+        text-decoration: none;
+      }
+        #navigation li a:hover {
+        background-color: darkslateblue;
+        color: #ffffff;
+      }
+        #navigation li a:active {
+        background: slateblue;
+        color: white;
+      }
+       #navigation li a.current{
+       
+       color: slateblue;
+       background:darkslateblue;
+      }
+
     </style>
   </head>
   <body>
-    <div id = "Index" style = "margin: 0 50px;display:flex; flex-direction:column; text-align: right;">
-      <h3 style = "color: green; text-decoration:underline; ">Index:</h3>
-    
-     <div id = "links">
-          <a style = "display: block; margin: 10px 0;" href = "https://kirchgessner.co">Home Page</a>
-          <a style = "display: block; margin: 10px 0;" href = "https://kyle.kirchgessner.co">Kyle</a>
-          <a style = "display: block; margin: 10px 0;" href = "https://blake.kirchgessner.co">Blake</a>
-          <a style = "display: block; margin: 10px 0;" href = "https://leah.kirchgessner.co">-> Leah</a>
-        </div>
+
+    <div id="submenu">
+      <h3 style="color: darkslateblue;border: 2px solid slateblue; padding: 10px; border-radius:10px; background-color: rgb(192, 184, 243);">Kirchgessner Dot Co</h3>
+      <h5 style="margin: 0px 10px;">Menu</h5>
+      <ul id="navigation">
+     
+          <li><a href = "https://kirchgessner.co">Home</a></li>
+          <li><a href = "https://kyle.kirchgessner.co">Kyle</a></li>
+          <li><a href = "https://blake.kirchgessner.co">Blake</a></li>
+          <li><a href = "https://leah.kirchgessner.co" class = "current">Leah</a></li>
+      </ul>  
     </div>
+
     <main>
         <div class="center-content">
-          <h1>Leah Kirchgessner</h1>
+          <h1>Leah Kirchgessner</h1> 
             <h2>Under Construction</h2>  
             
               <iframe src="https://giphy.com/embed/QvXVzMT3oziRDud6df" width="466" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/graduate-fitness-bench-press-benchpress-barbell-QvXVzMT3oziRDud6df">via GIPHY</a></p>
