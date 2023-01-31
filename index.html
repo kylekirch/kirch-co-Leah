@@ -1,70 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The personal webpage of Leah Kirchgessner, CPT, Pain Specialist, and Entrepeneur">
+    <meta name="keywords" content="Kyle Kirchgessner, Kyle Mark Kirchgessner, Kyle Kirchgessner Website, Software Personal Website, Personal Website, kyle kirchgessner, kyle m kirchgessner, web development website, software developer personal website, web developer personal website, resume website, personal resume website, software development candidates, kirchgessner, kirchco, kirch, compsci, web development">
+    <meta name="author" content="Kyle Kirchgessner">
+    <meta name="robots" content="index, follow">
+    <meta name="version" content="0.0.7">
+    
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">   
+
     <title>Leah D. Kirchgessner</title>
+
     <style>
         .center-content{
             text-align: center;
         }
-        #navigation {
-        color: white;
-        font-family: Sans-Serif;
-        border: 2px solid black;
-        background-origin: padding-box;
-        background-color: rgb(129, 118, 204);
-        height: auto;
-        list-style: none;
+        body {
         margin: 0;
-        padding: 0px;
-        position: relative;
+        border: 5px ridge slateblue;
+        border-top-width: 0px;
+        background-image: url(images/wallpaper.jpg);
+        }
+        .banner {
+          display: flex; 
+          flex-direction: row; 
+          justify-content: space-evenly; 
+          align-items: center;
+          padding-left: 0px;
+          margin: 10px 10px;
+
+          
+        }
+
+        .heads { 
+          color: wheat;
+          list-style: none;
+          display:flex;
+          background-repeat: no-repeat;
+          background-position: center;
+          text-align: center;
+
+          border: 1px solid slateblue;
+          border-top-width: 0px;
+          border-left-width: 0px;
+          border-right-width: 0px;
+
+          padding-top: 10px;
+          padding-bottom: 3px;
+          padding-left: 4px;
+          padding-right: 4px;
+
+          margin: 10px auto;
+          width: fit-content;
+          position: relative;
       }
+
+      .heads li a{ 
+    background-image: url(images/head_background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    background-size: cover;
+    margin: 0 20px;
+    width: auto;
+    position: relative;
+} 
+      .heads a {
+
+        text-shadow: -1px -1px 0 black;
+        color: white;
+        text-align: center;
+        width: auto;
+        height: auto;
+
+     }
+
+     .heads a.current {
+
+        text-shadow: -1px -1px 0 black;
+        color: wheat;
+        text-align: center;
+        border: 2px solid black;
+        border-top-width: 0;
+        border-bottom-width: 0px;
+        border-color: slateblue ;
+
+        
+        
+  
+     }
+
+
+        #navigation {
+      margin: 10px 0px;
+    color: wheat;
+    background: radial-gradient(ellipse at left, slateblue, white);
+    font-family: Sans-Serif;
+    background-origin: padding-box;
+    background-color: rgb(129, 118, 204);
+    height: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    position: relative;
+
+    -webkit-mask-image:
+    linear-gradient(to top, black 0%, black 100%),
+    linear-gradient(to top, transparent 0%, black 100%),
+    linear-gradient(to right, transparent 0%, black 100%),
+    linear-gradient(to bottom, transparent 0%, black 100%),
+    linear-gradient(to left, transparent 0%, black 100%);
+  -webkit-mask-position:
+    center,
+    top,
+    right,
+    bottom,
+    left;
+  -webkit-mask-size:
+    100% 100%,
+    100% 10px,
+    10px 100%,
+    100% 10px,
+    10px 100%;
+  -webkit-mask-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+   -webkit-mask-composite:
+    source-out,
+    source-over,
+    source-over,
+    source-over;
+    
+   /* for browsers which have implemented the official spec */
+  mask-image:
+    linear-gradient(to top, black 0%, black 100%),
+    linear-gradient(to top, transparent 0%, black 100%),
+    linear-gradient(to right, transparent 0%, black 100%),
+    linear-gradient(to bottom, transparent 0%, black 100%),
+    linear-gradient(to left, transparent 0%, black 100%);
+  mask-position:
+    center,
+    top,
+    right,
+    bottom,
+    left;
+  mask-size:
+    100% 100%,
+    100% 10px,
+    10px 100%,
+    100% 10px,
+    10px 100%;
+  mask-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  mask-composite:
+    subtract,
+    add,
+    add,
+    add;
+
+    }
+
+      #navigation p {
+        color: white;
+        background: linear-gradient(to top, darkslateblue, slateblue, white);
+        text-shadow: -1px -1px 0 black;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 6px;
+        margin: auto;
+        text-decoration: underline;
+      }
+
+
+
         #navigation li a {
-        color: whitesmoke;
+        text-shadow: -1px -1px 0 darkslateblue, 1px -1px 0 darkslateblue, -1px 1px 0 slateblue, 1px 1px 0 slateblue;
+        color: wheat;
         display: block;
-        border: 1px solid black;
         font-size: 12px;
         font-weight: bold;
         padding: 10px;
+        padding-left: 25px;
         text-decoration: none;
       }
         #navigation li a:hover {
-        background-color: darkslateblue;
+        background: radial-gradient(ellipse at left, slateblue, white);
         color: #ffffff;
       }
         #navigation li a:active {
-        background: slateblue;
-        color: white;
+        background: radial-gradient(ellipse at left, rgba(71, 61, 139, 0.584), white);
+        color: rgba(245, 222, 179, 0.63);
       }
        #navigation li a.current{
-       
-       color: slateblue;
-       background:darkslateblue;
+       text-decoration: underline;
+       color: wheat;
+       box-shadow: 5px slateblue;
+       background: radial-gradient(ellipse at right, slateblue, white);
       }
-
+        
+      
     </style>
   </head>
+
   <body>
+    <ul class="banner">
+      <img src="images/banner-1.jpg" alt="Banner-1" 
+      style="width: 25%; height: 25%; border: 5px groove wheat;">
 
+      <img src="images/logo.png">
+
+    <img src="images/banner-2.jpg" alt="Banner-2" 
+    style="width: 25%; height: 25%; border: 5px groove wheat;" >
+    
+    </ul>
     <div id="submenu">
-      <h3 style="color: darkslateblue;border: 2px solid slateblue; padding: 10px; border-radius:10px; background-color: rgb(192, 184, 243);">Kirchgessner Dot Co</h3>
-      <h5 style="margin: 0px 10px;">Menu</h5>
-      <ul id="navigation">
-     
-          <li><a href = "https://kirchgessner.co">Home</a></li>
-          <li><a href = "https://kyle.kirchgessner.co">Kyle</a></li>
-          <li><a href = "https://blake.kirchgessner.co">Blake</a></li>
-          <li><a href = "https://leah.kirchgessner.co" class = "current">Leah</a></li>
-      </ul>  
-    </div>
 
+
+      <ul id="navigation">
+          <p> Menu </p>
+          <li><a href = "https://kirchgessner.co" >Home</a></li>
+          <li><a href = "https://kyle.kirchgessner.co" >Kyle</a></li>
+          <li><a href = "https://blake.kirchgessner.co">Blake</a></li>
+          <li><a href = "https://leah.kirchgessner.co"class = "current">Leah</a></li>
+      </ul>  
+      <h1 style=" font-family: Garamond, serif; ;width: 650px; margin: 0 auto; background-position: center; background-repeat: no-repeat;
+      background: radial-gradient(circle at center, darkslateblue,slateblue, slateblue); background-size: 100%;
+      text-align: center;padding: 10px;color: whitesmoke; text-shadow: -1px -1px 0 black; 
+      padding-top: 25px; padding-bottom: 25px;
+      -webkit-mask-image:
+   linear-gradient(to top, black 0%, black 100%),
+   linear-gradient(to top, transparent 0%, black 100%),
+   linear-gradient(to right, transparent 0%, black 100%),
+   linear-gradient(to bottom, transparent 0%, black 100%),
+   linear-gradient(to left, transparent 0%, black 100%);
+ -webkit-mask-position:
+   center,
+   top,
+   right,
+   bottom,
+   left;
+ -webkit-mask-size:
+   100% 100%,
+   100% 10px,
+   10px 100%,
+   100% 10px,
+   10px 100%;
+ -webkit-mask-repeat:
+   no-repeat,
+   no-repeat,
+   no-repeat,
+   no-repeat,
+   no-repeat;
+  -webkit-mask-composite:
+   source-out,
+   source-over,
+   source-over,
+   source-over;
+   
+  /* for browsers which have implemented the official spec */
+ mask-image:
+   linear-gradient(to top, black 0%, black 100%),
+   linear-gradient(to top, transparent 0%, black 100%),
+   linear-gradient(to right, transparent 0%, black 100%),
+   linear-gradient(to bottom, transparent 0%, black 100%),
+   linear-gradient(to left, transparent 0%, black 100%);
+ mask-position:
+   center,
+   top,
+   right,
+   bottom,
+   left;
+ mask-size:
+   100% 100%,
+   100% 10px,
+   10px 100%,
+   100% 10px,
+   10px 100%;
+ mask-repeat:
+   no-repeat,
+   no-repeat,
+   no-repeat,
+   no-repeat,
+   no-repeat;
+ mask-composite:
+   subtract,
+   add,
+   add,
+   add;">
+      Leah Kirchgessner, CPT & Pain Specialist</h1>
+    </div>
+    <ul class="heads">
+      
+      
+      <li><a href = "about_me" class ="current" >About Me</a></li>
+      <li><a href = "cover">Cover</a></li>
+      <li><a href = "resume">Resume</a></li>
+      <li><a href = "more">More...</a></li>
+
+    </ul>
     <main>
+        
         <div class="center-content">
-          <h1>Leah Kirchgessner</h1> 
-            <h2>Under Construction</h2>  
-            
-              <iframe src="https://giphy.com/embed/QvXVzMT3oziRDud6df" width="466" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/graduate-fitness-bench-press-benchpress-barbell-QvXVzMT3oziRDud6df">via GIPHY</a></p>
-            
+          <div class="display" style="
+          border: 20px groove wheat; padding-left: 0; padding-right: 0px;
+          margin: 120px auto; width: 800px;">
+         <img src="images/content-1.jpg" alt="Content-1" width="100%" height="100%"style="margin: 0px 0px;">
+         <img src="images/content-2.png" alt="Content-2" height="100%"style="margin: 0px 0px;">
+     </div>
         </div>
     </main>
+
   </body>
+  <footer>
+    <div class="container" style="color: darkslateblue; border: 2px solid wheat; padding-left: 10px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="text-center">
+                  Copyright &copy;None, KirchCo LLC |
+                  Website Version 0.0.7 |
+                  Created by Kyle Kirchgessner</p> 
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="text-center">
+                    Contact Information: <a href="mailto:delane.leah@gmail.com">delane.leah@gmail.com</a> | 
+                    <a href="tel:+8327257272">(832) 725-7272</a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="text-center">
+                    Follow me on:
+                    <a href="https://facebook.com/leah.dinhoblekirchgessner">Twitter</a> |
+                    <a href="https://instagram.com/coach.leahk">Instagram</a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+              <p class="text-center">
+                  Licensing:
+                  <a href="http://www.freepik.com">Background Image: Designed by Freepik</a> |
+                  
+              </p>
+          </div>
+      </div>
+    </div>
+</footer>
+
 </html>
